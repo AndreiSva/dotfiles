@@ -22,6 +22,23 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='dracula'
 
+" custom ascii logo
+let g:ascii = [
+ \ " /$$   /$$                                /$$              ",
+ \ "| $$$ | $$                               |__/              ",
+ \ "| $$$$| $$  /$$$$$$   /$$$$$$  /$$    /$$ /$$ /$$$$$$/$$$$ ",
+ \ "| $$ $$ $$ /$$__  $$ /$$__  $$|  $$  /$$/| $$| $$_  $$_  $$",
+ \ "| $$  $$$$| $$$$$$$$| $$  \\ $$ \\  $$/$$/ | $$| $$ \\ $$ \\ $$",
+ \ "| $$\\  $$$| $$_____/| $$  | $$  \\  $$$/  | $$| $$ | $$ | $$",
+ \ "| $$ \\  $$|  $$$$$$$|  $$$$$$/   \\  $/   | $$| $$ | $$ | $$",
+ \ "|__/  \\__/ \\_______/ \\______/     \\_/    |__/|__/ |__/ |__/",
+ \ "                                                           "]
+let g:startify_custom_header = g:ascii + startify#fortune#boxed()
+
+let g:startify_bookmarks = [
+	\ { 'c': '~/.config/nvim/init.vim' },
+        \ ]
+
 set encoding=UTF-8
 
 let g:webdevicons_conceal_nerdtree_brackets = 1
