@@ -85,6 +85,15 @@ noremap <Leader>p "*p
 noremap <Leader>Y "+y
 noremap <Leader>P "+p
 
+imap jk <Esc>
+
+nnoremap <silent> <F2> :belowright split term://bash<CR>
+noremap <F3> :resize -5<CR>
+noremap <F4> :resize +5<CR>
+tmap <silent> <F2> <C-\><C-n> :bd! <CR>
+autocmd TermOpen * startinsert
+
+
 set noshowmode
-autocmd Filetype css setlocal tabstop=4 shiftwidth=4
-autocmd Filetype html setlocal tabstop=4 shiftwidth=4
+set tabstop=4
+set shiftwidth=4
