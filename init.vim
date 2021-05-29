@@ -93,7 +93,6 @@ noremap <F4> :resize +5<CR>
 tmap <silent> <F2> <C-\><C-n> :bd! <CR>
 autocmd TermOpen * startinsert
 
-
 set noshowmode
 set tabstop=4
 set shiftwidth=4
